@@ -5,6 +5,7 @@ const range = document.getElementById("jsRange");
 const fill = document.getElementById("jsMode");
 const clear = document.getElementById("jsclear");
 const save = document.getElementById("jsSave");
+const eraser = document.getElementById("clearbox");
 const init_color = "#2c2c2c";
 
 canvas.width = 700;
@@ -13,7 +14,7 @@ canvas.height = 700;
 ctx.fillStyle = "white";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 ctx.strokeStyle = init_color;
-ctx.lineWidth = 2.5;
+ctx.lineWidth = 5.0;
 
 let painting = false;
 
@@ -56,6 +57,7 @@ function handleColorClick(event) {
     const color = event.target.style.backgroundColor;
     ctx.strokeStyle = color;
     ctx.fillStyle = color;
+    ctx.lineWidth = range.value;
 }
 
 function handleRangeChange(event) {
@@ -67,6 +69,10 @@ function handleClearCanvas() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+
+function handleEraser() {
+    ctx.strokeStyle = "white";
 }
 
 function handleSaveClick() {
@@ -93,4 +99,8 @@ if (clear) {
 
 if (save) {
     save.addEventListener("click", handleSaveClick)
+}
+
+if (eraser) {
+    eraser.addEventListener("click", handleEraser)
 }

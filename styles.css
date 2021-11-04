@@ -61,6 +61,13 @@ body {
     margin-left: 5px;
 }
 
+.controls__colors .clearbox img {
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
 .controls .controls__range {
     margin-bottom: 30px;
 }
