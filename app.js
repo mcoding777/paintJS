@@ -3,6 +3,7 @@ const ctx = canvas.getContext("2d");
 const colors = document.getElementsByClassName("jsColor");
 const range = document.getElementById("jsRange");
 const fill = document.getElementById("jsMode");
+const clear = document.getElementById("jsclear");
 const save = document.getElementById("jsSave");
 const init_color = "#2c2c2c";
 
@@ -62,6 +63,12 @@ function handleRangeChange(event) {
     ctx.lineWidth = size;
 }
 
+function handleClearCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+
 function handleSaveClick() {
     const image = canvas.toDataURL("image/jpeg");
     const link = document.createElement("a");
@@ -78,6 +85,10 @@ if (range) {
 
 if (fill) {
     fill.addEventListener("click", handleFillColor)
+}
+
+if (clear) {
+    clear.addEventListener("click", handleClearCanvas)
 }
 
 if (save) {
