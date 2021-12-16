@@ -2,6 +2,9 @@
 paintJS (노마드코더 강의 실습)
 https://nomadcoders.co/javascript-for-beginners-2
 
+# 프로젝트 기간
+2021.10.24 ~ 2021.11.5
+
 # 구현한 기능
 - HTML Canvas 태그를 사용하여 그림을 그릴 수 있는 영역 구현
 - Canvas 2D Context로 그림 그리는 기능 구현
