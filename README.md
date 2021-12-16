@@ -1,8 +1,6 @@
 # 프로젝트명
 paintJS (노마드코더 강의 실습)
-https://nomadcoders.co/javascript-for-beginners-2
-
-
+https://nomadcoders.co/javascript-for-beginners-2  
 
 # 구현한 기능
 - HTML Canvas 태그를 사용하여 그림을 그릴 수 있는 영역 구현
