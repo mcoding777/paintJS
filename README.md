@@ -12,3 +12,6 @@ https://nomadcoders.co/javascript-for-beginners-2
 - HTML Input 태그의 range 타입으로 브러쉬 굵기 변경 기능 구현
 - (강의에 없는 내용) 2D Context 메서드로 전체 및 부분 지우기 기능 구현
 - Canvas.toDataURL로 이미지를 링크화해서 저장 기능 구현
+
+# 프로젝트 일지
+https://blog.naver.com/mcoding777/222565729769
